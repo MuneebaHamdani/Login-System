@@ -25,12 +25,11 @@ This project demonstrates authentication, session management, and database integ
 
 ## ⚙️ Setup & Installation  
 
-⚙️ Setup & Installation
-1. Clone the Repository
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   cd YOUR_REPO_NAME
 
-    git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-
-    cd YOUR_REPO_NAME
 
 2. Install Dependencies
 
