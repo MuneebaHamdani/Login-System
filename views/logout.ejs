@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+  <% if (typeof message !== "undefined") { %>
+    <div class="alert alert-<%= error ? 'danger' : 'success' %>">
+      <%= message %>
+    </div>
+  <% } %>
+
+  <div class="card shadow p-4">
+    <h3>You have been logged out.</h3>
+    <a href="/login" class="btn btn-primary mt-3">Login Again</a>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

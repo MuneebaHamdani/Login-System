@@ -1,0 +1,32 @@
+<%- include('partials/header', { title: "Verify OTP" }) %>
+
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+
+      <% if (message) { %>
+        <div class="alert alert-<%= message.type %> alert-dismissible fade show" role="alert">
+          <%= message.text %>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+        <% } %>
+
+          <div class="card shadow-lg border-0 rounded-4">
+            <div class="card-body p-4">
+              <h3 class="text-center mb-4">Verify OTP</h3>
+              <form action="/verify-forgot-password-otp" method="POST">
+                <div class="mb-3">
+                  <label class="form-label">Email</label>
+                  <input type="email" name="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">OTP</label>
+                  <input type="text" name="otp" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-info w-100">Verify OTP</button>
+              </form>
+            </div>
+          </div>
+    </div>
+  </div>
+
+  <%- include('partials/footer') %>

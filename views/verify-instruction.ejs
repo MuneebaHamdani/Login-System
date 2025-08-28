@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+  <div class="alert alert-info">
+    <h4>Please check your email</h4>
+    <p>We’ve sent you a verification link. Click the link in your email to verify your account.</p>
+  </div>
+
+  <!-- Resend form -->
+  <form action="/resend-verification" method="POST">
+    <input type="hidden" name="email" value="<%= email %>">
+    <button type="submit" class="btn btn-warning">Resend Verification Email</button>
+  </form>
+</div>
+
+<%- include('partials/footer') %>
